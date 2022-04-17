@@ -8,11 +8,11 @@ license="MIT"
 
 modId="moreglasses"
 
-version="${file.jarVersion}" 
+version="1.0.0"
 
 displayName="More Glasses"
 
-logoFile="examplemod.png" 
+logoFile="moreglasses.png"
 
 credits="A mod that adds better glass to minecraft by Nobody"
 
