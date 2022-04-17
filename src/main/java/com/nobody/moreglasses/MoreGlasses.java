@@ -1,10 +1,14 @@
 package com.nobody.moreglasses;
 
+import com.nobody.moreglasses.util.RegistryHandler;
+import net.minecraft.block.BlockRenderType;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
+import net.minecraftforge.client.model.pipeline.ForgeBlockModelRenderer;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-import com.nobody.moreglasses.core.init.BlockInit;
-import com.nobody.moreglasses.core.init.ItemInit;
 
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -26,19 +30,15 @@ public class MoreGlasses {
     public static final String MOD_ID = "moreglasses";
 
     public MoreGlasses() {
-        IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
-        ItemInit.ITEMS.register(bus);
-        BlockInit.BLOCKS.register(bus);
+        RegistryHandler.init();
 
         MinecraftForge.EVENT_BUS.register(this);
     }
 
-    @SubscribeEvent
-    public static void onRegisterItems(final RegistryEvent.Register<Item> event) {
-        BlockInit.BLOCKS.getEntries().stream().map(RegistryObject::get).forEach(block -> {
-            event.getRegistry().register(new BlockItem(block, new Item.Properties().tab(ItemGroup.TAB_MISC))
-                    .setRegistryName(block.getRegistryName()));
-        });
-    }
+    private void setup(final FMLCommonSetupEvent event) { }
+
+    private void doClientStuff(final FMLClientSetupEvent event) { }
 }
