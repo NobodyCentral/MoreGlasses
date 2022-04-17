@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "moreglasses:blocks/black_clear_glass"
+  }
+}

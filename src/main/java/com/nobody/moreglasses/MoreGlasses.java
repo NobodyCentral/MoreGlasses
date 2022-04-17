@@ -41,6 +41,23 @@ public class MoreGlasses {
 
     private void setup(final FMLCommonSetupEvent event) {
         RenderTypeLookup.setRenderLayer(RegistryHandler.CLEAR_GLASS.get(), RenderType.translucent());
+        RenderTypeLookup.setRenderLayer(RegistryHandler.CLEAR_WHITE_GLASS.get(), RenderType.translucent());
+        RenderTypeLookup.setRenderLayer(RegistryHandler.CLEAR_ORANGE_GLASS.get(), RenderType.translucent());
+        RenderTypeLookup.setRenderLayer(RegistryHandler.CLEAR_MAGENTA_GLASS.get(), RenderType.translucent());
+        RenderTypeLookup.setRenderLayer(RegistryHandler.CLEAR_LIGHT_BLUE_GLASS.get(), RenderType.translucent());
+        RenderTypeLookup.setRenderLayer(RegistryHandler.CLEAR_YELLOW_GLASS.get(), RenderType.translucent());
+        RenderTypeLookup.setRenderLayer(RegistryHandler.CLEAR_LIME_GLASS.get(), RenderType.translucent());
+        RenderTypeLookup.setRenderLayer(RegistryHandler.CLEAR_PINK_GLASS.get(), RenderType.translucent());
+        RenderTypeLookup.setRenderLayer(RegistryHandler.CLEAR_GRAY_GLASS.get(), RenderType.translucent());
+        RenderTypeLookup.setRenderLayer(RegistryHandler.CLEAR_LIGHT_GRAY_GLASS.get(), RenderType.translucent());
+        RenderTypeLookup.setRenderLayer(RegistryHandler.CLEAR_CYAN_GLASS.get(), RenderType.translucent());
+        RenderTypeLookup.setRenderLayer(RegistryHandler.CLEAR_PURPLE_GLASS.get(), RenderType.translucent());
+        RenderTypeLookup.setRenderLayer(RegistryHandler.CLEAR_BLUE_GLASS.get(), RenderType.translucent());
+        RenderTypeLookup.setRenderLayer(RegistryHandler.CLEAR_BROWN_GLASS.get(), RenderType.translucent());
+        RenderTypeLookup.setRenderLayer(RegistryHandler.CLEAR_GREEN_GLASS.get(), RenderType.translucent());
+        RenderTypeLookup.setRenderLayer(RegistryHandler.CLEAR_RED_GLASS.get(), RenderType.translucent());
+        RenderTypeLookup.setRenderLayer(RegistryHandler.CLEAR_BLACK_GLASS.get(), RenderType.translucent());
+
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) { }
