@@ -4,6 +4,7 @@ import com.nobody.moreglasses.util.RegistryHandler;
 import net.minecraft.block.BlockRenderType;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.model.pipeline.ForgeBlockModelRenderer;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -38,7 +39,16 @@ public class MoreGlasses {
         MinecraftForge.EVENT_BUS.register(this);
     }
 
-    private void setup(final FMLCommonSetupEvent event) { }
+    private void setup(final FMLCommonSetupEvent event) {
+        RenderTypeLookup.setRenderLayer(RegistryHandler.CLEAR_GLASS.get(), RenderType.translucent());
+    }
 
     private void doClientStuff(final FMLClientSetupEvent event) { }
+
+    public static final ItemGroup TAB = new ItemGroup("moreglassestab") {
+        @Override
+        public ItemStack makeIcon() {
+            return new ItemStack(RegistryHandler.CLEAR_GLASS_ITEM.get());
+        }
+    };
 }
