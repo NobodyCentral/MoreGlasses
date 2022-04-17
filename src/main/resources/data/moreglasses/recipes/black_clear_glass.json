@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "xyx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "moreglasses:clear_glass"
+    },
+    "y":
+    {
+      "item": "minecraft:black_dye"
+    }
+  },
+  "result":
+  {
+    "item": "moreglasses:black_clear_glass",
+    "count": 8
+  }
+}
