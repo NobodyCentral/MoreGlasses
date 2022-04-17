@@ -1,0 +1,43 @@
+modLoader="javafml" 
+
+loaderVersion="[36,)" 
+
+license="MIT"
+
+[[mods]] 
+
+modId="moreglasses"
+
+version="${file.jarVersion}" 
+
+displayName="More Glasses"
+
+logoFile="examplemod.png" 
+
+credits="A mod that adds better glass to minecraft by Nobody"
+
+authors="Nobody" 
+
+description='''
+Mod by Nobody.
+'''
+
+[[dependencies.moreglasses]] #optional
+    
+    modId="forge" 
+    
+    mandatory=true 
+    
+    versionRange="[36,)" 
+    
+    ordering="NONE"
+    
+    side="BOTH"
+
+[[dependencies.tubes]]
+    modId="minecraft"
+    mandatory=true
+
+    versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"
