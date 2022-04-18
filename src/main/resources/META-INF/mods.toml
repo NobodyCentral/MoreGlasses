@@ -1,6 +1,6 @@
 modLoader="javafml" 
 
-loaderVersion="[36,)" 
+loaderVersion="[36,)"
 
 license="MIT"
 
@@ -8,7 +8,7 @@ license="MIT"
 
 modId="moreglasses"
 
-version="1.0.0"
+version="1.16.5-1.0.0"
 
 displayName="More Glasses"
 
@@ -26,6 +26,9 @@ that's it.
 no, seriously that is it.
 
 Mod by Nobody.
+
+Submit any issues you have here:
+https://github.com/NobodyCentral/MoreGlasses/issues
 '''
 
 [[dependencies.moreglasses]] #optional
