@@ -7,4 +7,4 @@ This is still a work in-progress so be patient. some plans for the mod:
  - blast proof glass
  - wither glass
 
-If you got anymore ideas, suggest them in the issue tracker.
+If you got anymore ideas, suggest them in the issue tracker and start the title with suggestion in all caps.
