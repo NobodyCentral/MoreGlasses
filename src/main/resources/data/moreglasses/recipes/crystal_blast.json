@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+      "item": "moreglasses:crystal_geode"
+    },
+  "result": "moreglasses:crystal",
+  "experience": 0.1,
+  "cookingtime": 100
+}
