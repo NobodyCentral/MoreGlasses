@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xy",
+    "yz"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:sand"
+    },
+    "y":
+    {
+      "item": "moreglasses:crystal"
+    },
+    "z":
+    {
+      "item": "minecraft:air"
+    }
+  },
+  "result":
+  {
+    "item": "moreglasses:sandy_crystals",
+    "count": 1
+  }
+}

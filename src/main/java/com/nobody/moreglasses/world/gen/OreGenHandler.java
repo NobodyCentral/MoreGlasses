@@ -2,6 +2,7 @@ package com.nobody.moreglasses.world.gen;
 
 import com.nobody.moreglasses.MoreGlasses;
 import com.nobody.moreglasses.util.RegistryHandler;
+import net.minecraft.block.Blocks;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.world.biome.Biome;
@@ -10,6 +11,7 @@ import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.IFeatureConfig;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
+import net.minecraft.world.gen.feature.template.BlockMatchRuleTest;
 import net.minecraftforge.common.world.BiomeGenerationSettingsBuilder;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
@@ -35,6 +37,11 @@ public class OreGenHandler {
                 OreFeatureConfig.FillerBlockType.NATURAL_STONE, RegistryHandler.CRYSTAL_ORE.get().defaultBlockState(), 9)) //Vein Size
                 .range(64).squared() //Spawn height start
                 .count(48))); //Chunk spawn frequency
+
+        overworldOres.add(register("sandy_crystals", Feature.ORE.configured(new OreFeatureConfig(
+                new BlockMatchRuleTest(Blocks.SAND), RegistryHandler.SANDY_CRYSTALS.get().defaultBlockState(), 4)) //Vein Size
+                .range(128).squared() //Spawn height start
+                .count(128))); //Chunk spawn frequency
 
         //Nether Ore Register
         //netherOres.add(register("flame_crystal_ore", Feature.ORE.configured(new OreFeatureConfig(

@@ -4,6 +4,7 @@ import com.nobody.moreglasses.MoreGlasses;
 import com.nobody.moreglasses.blocks.BlockItemBase;
 import com.nobody.moreglasses.blocks.CrystalOre;
 import com.nobody.moreglasses.blocks.GlassBase;
+import com.nobody.moreglasses.blocks.SandyCrystals;
 import com.nobody.moreglasses.items.ItemBase;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -43,6 +44,7 @@ public class RegistryHandler {
     public static final RegistryObject<Block> CLEAR_GREEN_GLASS = BLOCKS.register("green_clear_glass", GlassBase::new);
     public static final RegistryObject<Block> CLEAR_RED_GLASS = BLOCKS.register("red_clear_glass", GlassBase::new);
     public static final RegistryObject<Block> CLEAR_BLACK_GLASS = BLOCKS.register("black_clear_glass", GlassBase::new);
+    public static final RegistryObject<Block> SANDY_CRYSTALS = BLOCKS.register("sandy_crystals", SandyCrystals::new);
 
     // Block Items
     public static final RegistryObject<Item> CLEAR_GLASS_ITEM = ITEMS.register("clear_glass", () -> new BlockItemBase(CLEAR_GLASS.get()));
@@ -62,6 +64,7 @@ public class RegistryHandler {
     public static final RegistryObject<Item> CLEAR_GREEN_GLASS_ITEM = ITEMS.register("green_clear_glass", () -> new BlockItemBase(CLEAR_GREEN_GLASS.get()));
     public static final RegistryObject<Item> CLEAR_RED_GLASS_ITEM = ITEMS.register("red_clear_glass", () -> new BlockItemBase(CLEAR_RED_GLASS.get()));
     public static final RegistryObject<Item> CLEAR_BLACK_GLASS_ITEM = ITEMS.register("black_clear_glass", () -> new BlockItemBase(CLEAR_BLACK_GLASS.get()));
+    public static final RegistryObject<Item> SANDY_CRYSTALS_ITEM = ITEMS.register("sandy_crystals", () -> new BlockItemBase(SANDY_CRYSTALS.get()));
 
     // Ore Blocks
     public static final RegistryObject<Block> CRYSTAL_ORE = BLOCKS.register("crystal_geode", CrystalOre::new);
