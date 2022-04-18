@@ -1,6 +1,7 @@
 package com.nobody.moreglasses;
 
 import com.nobody.moreglasses.util.RegistryHandler;
+import com.nobody.moreglasses.world.gen.OreGenHandler;
 import net.minecraft.block.BlockRenderType;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
@@ -58,6 +59,7 @@ public class MoreGlasses {
         RenderTypeLookup.setRenderLayer(RegistryHandler.CLEAR_RED_GLASS.get(), RenderType.translucent());
         RenderTypeLookup.setRenderLayer(RegistryHandler.CLEAR_BLACK_GLASS.get(), RenderType.translucent());
 
+        OreGenHandler.registerOres();
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) { }
